@@ -88,4 +88,5 @@ on moto-charger
 service vendor.charge_only_mode /vendor/bin/charge_only_mode
     user root
     group graphics system input
+    capabilities SYS_BOOT
     disabled
