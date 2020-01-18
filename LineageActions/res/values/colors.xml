@@ -12,5 +12,8 @@
 -->
 
 <resources>
-    <color name="homepage_moto_background">#06A097</color>
-</resources> 
+    <color name="switchbar_background_color">@*android:color/material_grey_600</color>
+    <color name="switchbar_switch_track_tint">#BFFFFFFF</color>
+    <color name="switchbar_switch_thumb_tint">@android:color/white</color>
+</resources>
+
