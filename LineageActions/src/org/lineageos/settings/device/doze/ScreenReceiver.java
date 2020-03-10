@@ -24,6 +24,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 
+import org.lineageos.settings.device.actions.Constants;
+
 public class ScreenReceiver extends BroadcastReceiver {
     private final ScreenStateNotifier mNotifier;
 
@@ -37,6 +39,8 @@ public class ScreenReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        if (intent.getAction() == null) return;
+
         if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
             mNotifier.screenTurnedOff();
         } else if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {

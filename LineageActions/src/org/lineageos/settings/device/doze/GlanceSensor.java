@@ -31,9 +31,7 @@ public class GlanceSensor implements ScreenStateNotifier {
     private final LineageActionsSettings mLineageActionsSettings;
     private final SensorHelper mSensorHelper;
     private final SensorAction mSensorAction;
-    
     private final Sensor mSensor;
-    private final Sensor mApproachSensor;
 
     private boolean mEnabled;
 
@@ -44,7 +42,6 @@ public class GlanceSensor implements ScreenStateNotifier {
         mSensorAction = action;
 
         mSensor = sensorHelper.getGlanceSensor();
-        mApproachSensor = sensorHelper.getApproachGlanceSensor();
     }
 
     @Override
@@ -52,7 +49,6 @@ public class GlanceSensor implements ScreenStateNotifier {
         if (mEnabled) {
             Log.d(TAG, "Disabling");
             mSensorHelper.unregisterListener(mGlanceListener);
-            mSensorHelper.unregisterListener(mApproachGlanceListener);
             mEnabled = false;
         }
     }
@@ -62,27 +58,14 @@ public class GlanceSensor implements ScreenStateNotifier {
         if (mLineageActionsSettings.isPickUpEnabled() && !mEnabled) {
             Log.d(TAG, "Enabling");
             mSensorHelper.registerListener(mSensor, mGlanceListener);
-            mSensorHelper.registerListener(mSensor, mApproachGlanceListener);
             mEnabled = true;
         }
     }
 
     private SensorEventListener mGlanceListener = new SensorEventListener() {
         @Override
-        public synchronized void onSensorChanged(SensorEvent event) {
-            Log.d(TAG, "Changed");
-            mSensorAction.action();
-        }
-
-        @Override
-        public void onAccuracyChanged(Sensor mSensor, int accuracy) {
-        }
-    };
-
-    private SensorEventListener mApproachGlanceListener = new SensorEventListener() {
-        @Override
-        public synchronized void onSensorChanged(SensorEvent event) {
-            Log.d(TAG, "Approach: Changed");
+        public void onSensorChanged(SensorEvent event) {
+            Log.d(TAG, "triggered");
             mSensorAction.action();
         }
 

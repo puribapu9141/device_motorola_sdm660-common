@@ -17,31 +17,13 @@
 
 package org.lineageos.settings.device;
 
-import android.app.ActionBar;
 import android.os.Bundle;
-import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
-import android.text.TextUtils;
-import android.view.MenuItem;
-
-import java.io.File;
 
 public class ActionsPreferenceFragment extends PreferenceFragment {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.actions_panel);
-        final ActionBar actionBar = getActivity().getActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            getActivity().onBackPressed();
-            return true;
-        }
-        return false;
+        addPreferencesFromResource(R.xml.main_panel);
     }
 }
