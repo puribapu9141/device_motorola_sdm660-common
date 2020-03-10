@@ -16,12 +16,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Title and summary -->
-    <string name="moto_actions_title">Device gestures</string>
 
     <!-- Device gestures -->
-    <string name="device_gestures_title">Device gestures</string>
-    <string name="device_gestures_summary">Manage device gestures</string>
+    <string name="device_gestures_title">Device actions</string>
+    <string name="device_gestures_summary">Manage device actions</string>
 
     <!-- Ambient display gestures -->
     <string name="ambient_display_manage_summary">Manage ambient display gestures</string>
@@ -29,8 +27,8 @@
     <!-- Fingerprint gestures -->
     <string name="fingerprint_gestures_title">Fingerprint gestures</string>
     <string name="fingerprint_gestures_summary">Use fingerprint gestures</string>
-    <string name="fingerprint_gestures_manage_summary">Manage fingerprint gestures</string>
-    <string name="fingerprint_actions_screenon">Actions with screen on</string>
+    <string name="fingerprint_gestures_manage_summary">Arrange fingerprint gestures</string>
+    <string name="fingerprint_actions_screenon">Gestures with screen on</string>
     <string name="fingerprint_tap_title">Single tap</string>
     <string name="fingerprint_tap_dlg_title">Select action for single tap</string>
     <string name="fingerprint_double_tap_title">Double tap</string>
@@ -43,9 +41,9 @@
     <string name="fingerprint_swipe_right_dlg_title">Select action for swipe right</string>
 
     <!-- Fingerprint gestures screen off -->
-    <string name="fingerprint_gestures_screenoff_title">Fingerprint gestures when screen off</string>
-    <string name="fingerprint_gestures_screenoff_summary">Use fingerprint gestures when screen off.\n\nFingerprint unlocking must be disabled to use this feature.</string>
-    <string name="fingerprint_actions_screenoff">Actions with screen off</string>
+    <string name="fingerprint_gestures_screenoff_title">Gestures when screen off</string>
+    <string name="fingerprint_gestures_screenoff_summary">Works only when fingerprint unlock is disabled</string>
+    <string name="fingerprint_actions_screenoff">Gestures with screen off</string>
 
     <!-- Actions -->
     <string name="action_none">None</string>
@@ -69,64 +67,7 @@
     <string name="action_email">Open email app</string>
     <string name="action_messages">Open messages app</string>
 
-    <!-- Screen off gestures -->
-    <string name="screen_off_gestures_title">Screen off gestures</string>
-    <string name="screen_off_gestures_manage_summary">Manage gestures when screen is off</string>
-    <string name="screen_off_gestures_swipe_left_title">Swipe left</string>
-    <string name="screen_off_gestures_swipe_left_dlg_title">Select action for swipe left</string>
-    <string name="screen_off_gestures_swipe_right_title">Swipe right</string>
-    <string name="screen_off_gestures_swipe_right_dlg_title">Select action for swipe right</string>
-    <string name="screen_off_gestures_swipe_up_title">Swipe up</string>
-    <string name="screen_off_gestures_swipe_up_dlg_title">Select action for swipe up</string>
-    <string name="screen_off_gestures_swipe_down_title">Swipe down</string>
-    <string name="screen_off_gestures_swipe_down_dlg_title">Select action for swipe down</string>
-
-   <!-- Double tap to wake -->
-   <string name="tap_to_wake">Tap to wake</string>
-   <string name="tap_to_wake_summary">Double-tap anywhere on the screen to wake device</string>
-
-   <!-- Screen off gestures haptic feedback -->
+   <!-- Haptic feedback -->
    <string name="haptic_feedback">Haptic feedback</string>
-   <string name="haptic_feedback_summary">Vibrate when a touchscreen gesture is detected</string>
-
-    <!-- Dirac settings -->
-    <string name="dirac_title">Dirac sound enhancer</string>
-    <string name="dirac_summary">Optimize audio quality</string>
-    <string name="dirac_headset_title">Choose headphone type</string>
-    <string name="dirac_preset_title">Choose a preset</string>
-
-    <string name="dirac_headset_default">Default</string>
-    <string name="dirac_headset_earbuds">Mi Earbuds</string>
-    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
-    <string name="dirac_headset_piston_1">Mi Piston-1</string>
-    <string name="dirac_headset_general">General</string>
-    <string name="dirac_headset_general_inear">General In-Ear</string>
-    <string name="dirac_headset_piston_basic">Basic Edition</string>
-    <string name="dirac_headset_piston_2">Mi Piston-2</string>
-    <string name="dirac_headset_piston_standard">Standard Edition</string>
-    <string name="dirac_headset_headphone">Mi Headphones</string>
-    <string name="dirac_headset_piston_youth">Youth Edition</string>
-    <string name="dirac_headset_piston_color">Color Edition</string>
-    <string name="dirac_headset_in_ear">Mi In-Ear</string>
-    <string name="dirac_headset_capsule">Mi Capsule</string>
-    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
-    <string name="dirac_headset_comfort">Mi Comfort</string>
-    <string name="dirac_headset_reduction_noise">Mi Noise Cancelling Type-C</string>
-    <string name="dirac_headset_cancelling">Mi Noise Cancelling 3.5mm</string>
-    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
-    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
-    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
-    <string name="dirac_headset_earphone">Mi Earphones</string>
-
-    <string name="dirac_preset_default">Default</string>
-    <string name="dirac_preset_rock">Rock</string>
-    <string name="dirac_preset_jazz">Jazz</string>
-    <string name="dirac_preset_pop">Pop</string>
-    <string name="dirac_preset_classical">Classical</string>
-    <string name="dirac_preset_hiphop">Hip Hop</string>
-    <string name="dirac_preset_blues">Blues</string>
-    <string name="dirac_preset_electronic">Electronic</string>
-    <string name="dirac_preset_country">Country</string>
-    <string name="dirac_preset_dance">Dance</string>
-    <string name="dirac_preset_metal">Metal</string>
+   <string name="haptic_feedback_summary">Vibrate when gesture is detected</string>
 </resources>

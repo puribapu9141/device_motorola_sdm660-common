@@ -44,7 +44,7 @@
 
     <!-- Fingerprint gestures screen off -->
     <string name="fingerprint_gestures_screenoff_title">Habilitar com a tela desligada</string>
-    <string name="fingerprint_gestures_screenoff_summary">Habilitar os gestos no sensor biométrico quando a tela estiver desligada.\n\nO desbloqueio por impressão digital deve estar desativado para usar esse recurso.</string>
+    <string name="fingerprint_gestures_screenoff_summary">O desbloqueio por impressão digital deve estar desativado para usar esse recurso.</string>
     <string name="fingerprint_actions_screenoff">Ações com a tela desligada</string>
 
     <!-- Actions -->
