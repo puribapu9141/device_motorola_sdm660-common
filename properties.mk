@@ -85,11 +85,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.tunnel.encode=false \
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
-    vendor.voice.path.for.pcm.voip=false \
+    vendor.voice.path.for.pcm.voip=true \
     vendor.audio.offload.min.duration.secs=60
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    use.voice.path.for.pcm.voip=false
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
